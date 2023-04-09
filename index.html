@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess The Number</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form onkeypress="if(event.keyCode === 13) return false">
+        <input class="yrNum" placeholder="Відгадайте число від 0 до 9" id="v" onkeypress="if(event.keyCode === 13) guess()"
+            autocomplete="off" maxlength="1">
+        <p class="warning">У вас не більше 3 спроб!</p>
+        <input class="restartBtn" type="button" onclick="game()" value="Наступна гра">
+    </form>
+
+    <p class="resault" id="r"></p>
+</body>
+<script src="script.js"></script>
+
+</html>
